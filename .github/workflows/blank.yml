@@ -12,5 +12,6 @@ jobs:
         with:
           node-version: '20'
       - run: npm i angular
-      - run: npm i && ng serve
+      - run: npm i
+      - run ng serve
       - run: node -v
