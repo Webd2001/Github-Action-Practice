@@ -4,7 +4,7 @@ on:
   push
 
 jobs:
-  check-bats-version:
+  angular :
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -13,5 +13,4 @@ jobs:
           node-version: '20'
       - run: npm i angular
       - run: npm i
-      - run ng serve
       - run: node -v
